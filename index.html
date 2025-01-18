@@ -1,10 +1,80 @@
 <!DOCTYPE>
-<html>
+<html lang="en-us">
   <head>
     <meta charset="utf-8" name="icefox/blog">
+    <link rel="favicon" href="photo/logo.png">
     <title>Index page</title>
   </head>
   <body>
-  <script src="index.js"></script>
+  
+  <main>
+    <img src="photo/logo.png" alt="logo">
+    <p>
+      <a href="zh-cn/home.html" target="_blank">中文简体</a>
+      <a href="zh-tw/home_tw.html" target="_blank">中文繁體</a>
+      <a href="en-us/home_en.html" target="_blank">English</a>
+      <a href="ja-jp/home_jp.html" target="_blank">日本語</a>
+      <a href="ko-kr/home_kr.html" target="_blank">한국어</a>
+      <a href="ru-ru/home_ru.html" target="_blank">русский</a>
+    </p>
+  </main>
+
+  <script>
+    var input_passwd = prompt(":drowssap eht epyt esaelP");
+    //check the person 
+    if(input_passwd ==="013740x") 
+    {
+      window.location.replace("./zh-cn/home.html");
+    }
+    else  if(input_passwd==="013740y"){
+      window.location.replace("home2.html");
+    }
+    else  
+    {
+      alert("404");
+    }
+    </script>
+
+  <style>
+    body {
+      background: #f0f0f0;
+    }
+    main{
+      text-align: center;
+      margin:30%;
+      max-width: 70%;
+      border: #333 solid 1px;
+      border-radius: 10%;
+      background: white;
+      display: flex;
+      flex-flow:row wrap;
+      align-items: center;
+      justify-content: space-around;
+      overflow: hidden;
+    }
+    img {
+      width: 150px;
+      height:auto;
+      border-radius: 50%;
+    }
+    p {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: space-around;
+    }
+    a{
+      color: #333;
+      font-size: 1.5em;
+      text-decoration: none;
+      margin: 4px;
+    }
+    a:link:hover, a:visited:hover {
+      color:#666;
+      background-color: #f0f0f0 ;
+      border-radius: 4px ;
+      text-decoration:none;
+    }
+  </style>
   </body>
 </html>
