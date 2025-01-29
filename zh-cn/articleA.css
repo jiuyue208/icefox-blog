@@ -1,0 +1,19 @@
+#loge{
+    float:right;
+}
+
+.articleA {
+    margin:1rem;
+    padding: 1rem;
+}
+
+.articleA > article {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.articleA > article > h2, .articleA > article > p {
+  color: black;
+}
