@@ -1,0 +1,43 @@
+header {
+    position: fixed;
+    text-align: center;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: 40px; /* 设置与图像等高 */
+    line-height: 40px; /* 垂直居中对齐内容 */
+    border-radius: 0 0 20px 20px;
+}
+header > img {
+    float: right;
+    width: 36px;
+    border: solid 2px;
+    border-radius: 50%;
+    height: 36px; /* 固定图像高度 */
+    margin: 0;
+}
+/*a指文章内容中的，.return的a特指返回*/
+a{
+    color:black;
+}
+.return{
+    color:white;
+    float:left;
+}
+
+.articleA {
+    margin:4rem 1rem 1rem 1rem;
+    padding: 1rem;
+}
+
+.articleA > article {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.articleA > article > h2, .articleA > article > p {
+  color: black;
+}

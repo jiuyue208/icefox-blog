@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*页眉样式*/
+header > h2{
+  margin-top:60px;
+  margin-bottom:50px;
+}
+
+header > section > a{
+  color:white;
+  border-top:8px solid white;
+  padding:16px;
+  font-size:32px;
+  font-weight:normal;
+  text-decoration:none;
+  list-style-type:none;
+  /*flex:1;*/
+}
+header > section > a:link:hover, header > section > a:visited:hover{
+  font-size:40px;
+  font-weight:0px;
+}
+
+
+    
+/*主体部分*/
+#literature_main_flex_container > section{
+  display:flex;
+  flex-flow:wrap row;
+  justify-content:space-around;
+  align-items:center;
+
+}
+#literature_main_flex_container > section > article {
+  margin:10px;
+  padding:10px;
+  text-align:center;
+  border:2px solid;
+  border-radius:10px 10px;
+  flex:400px 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
